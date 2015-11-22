@@ -24,7 +24,7 @@ for line in inputlist:
             nghbr, length = each_edge.split(",")
             nghbrs.append(int(nghbr))
             lgths.append(int(length))
-            nodes[curnode]= node(nghbrs, lgths)
+      nodes[curnode]= node(nghbrs, lgths)
       
 ##initialize
 X = [1]
