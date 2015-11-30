@@ -25,7 +25,6 @@ class heap:
                   self.indexlist[parent_pos], self.indexlist[child_pos] = child, parent  #swap child and parent position
                   nodes[child].heappos, nodes[parent].heappos = parent_pos, child_pos
                   child_pos = parent_pos
-                  child = self.indexlist[child_pos]
                   parent_pos = (child_pos -1)/2
                   if parent_pos >= 0:
                         parent = self.indexlist[parent_pos]
@@ -36,7 +35,6 @@ class heap:
             #print self.indexlist, self.length
             if self.length:
                   child_pos = self.length
-                  child = self.indexlist[-1]
                   #print 'child', child_pos, child
                   self.bubbleup(child_pos)
             self.length += 1
